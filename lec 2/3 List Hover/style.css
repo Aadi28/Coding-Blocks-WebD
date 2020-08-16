@@ -1,0 +1,14 @@
+li > ul {
+  display: none;
+}
+
+li:hover > ul {
+  display: block;
+  background-color: white;
+  color: black;
+}
+
+li:hover {
+  background-color: black;
+  color: white;
+}

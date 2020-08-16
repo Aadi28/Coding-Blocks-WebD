@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url(./images/bg1.jpg);
+  perspective: 800px;
+}
+.header {
+  height: 100px;
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid black;
+}
+.nav {
+  position: fixed;
+  background-color: rgb(1, 4, 37);
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid black;
+  align-items: center;
+}
+li {
+  list-style: none;
+  display: inline-flex;
+  justify-content: space-around;
+  margin: 0 50px;
+}
+a {
+  color: honeydew;
+  text-decoration: none;
+  font-size: xx-large;
+}
+a:hover {
+  color: yellow;
+}
+.text {
+  background: radial-gradient(yellow, white, yellow);
+  transform: rotateY(180deg);
+  overflow: auto;
+}
+h2 {
+  margin-top: 10px;
+}
+div {
+  display: block;
+  justify-content: center;
+  border: 1px solid black;
+  height: 20em;
+  width: 35em;
+  border-radius: 10%;
+}
+.back {
+  background: black;
+  backface-visibility: hidden;
+}
+p {
+  padding: 5%;
+  margin: 25px 2px;
+}
+.back,
+.text {
+  position: absolute;
+}
+.wrap:hover {
+  transform: rotateY(180deg);
+}
+.wrap {
+  margin: 5% 5%;
+  transition: all 3s;
+  transform-style: preserve-3d;
+  display: inline-block;
+}
+
+.one {
+  background: no-repeat url(./images/cars1.webp);
+  background-size: 600px 350px;
+}
+
+.two {
+  background: no-repeat url(./images/cars2.jpg);
+  background-size: 600px 350px;
+}
+.three {
+  background: no-repeat url(./images/cars3.webp);
+  background-size: 560px 350px;
+}
+.four {
+  background: no-repeat url(./images/cars4.jpeg);
+  background-size: 800px 350px;
+}
+.five {
+  background: no-repeat url(./images/cars5.jpg);
+  background-size: 700px 350px;
+}
+.six {
+  background: no-repeat 10% url(./images/cars6.jpg);
+  background-size: 600px 400px;
+}
+.seven {
+  background: no-repeat url(./images/bike1.jpg);
+  background-size: 600px 350px;
+}
+.eight {
+  background: no-repeat url(./images/bike2.jpg);
+  background-size: 600px 350px;
+}
+.nine {
+  background: no-repeat url(./images/bike3.jpg);
+  background-size: 600px 350px;
+}
+.ten {
+  background: no-repeat url(./images/bike4.jpg);
+  background-size: 600px 350px;
+}
+.eleven {
+  background: no-repeat url(./images/bike5.jpg);
+  background-size: 600px 350px;
+}
+.twelve {
+  background: no-repeat url(./images/bike6.webp);
+  background-size: 600px 350px;
+}
+
+.thirteen {
+  background: no-repeat url(./images/ls1.webp);
+  background-size: 600px 350px;
+}
+.fourteen {
+  background: no-repeat url(./images/ls2.webp);
+  background-size: 600px 350px;
+}
+.fifteen {
+  background: no-repeat url(./images/lss3.jpg);
+  background-size: 600px 350px;
+}
+.sixteen {
+  background: no-repeat url(./images/ls4.jpg);
+  background-size: 600px 350px;
+}
+.seventeen {
+  background: no-repeat url(./images/ls5.webp);
+  background-size: 600px 350px;
+}
+.eighteen {
+  background: no-repeat url(./images/ls6.jpg);
+  background-size: 600px 350px;
+}

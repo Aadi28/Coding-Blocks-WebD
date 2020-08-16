@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FizzBuzz</title>
+  </head>
+  <body>
+    <input type="number" id="inp" />
+    <button onclick="fun()">Submit</button>
+    <ul id="list"></ul>
+    <script>
+      function fun() {
+        const a = document.getElementById("inp");
+        const b = document.getElementById("list");
+        let variable = parseInt(a.value);
+        b.innerHTML = "";
+        for (let i = 1; i <= variable; i++) {
+          var node = document.createElement("LI");
+          var fizz = document.createTextNode("Fizz");
+          var buzz = document.createTextNode("Buzz");
+          var fizzbuzz = document.createTextNode("FizzBuzz");
+          var num = document.createTextNode(i);
+          if (i % 15 === 0) {
+            node.appendChild(fizzbuzz);
+            b.appendChild(node);
+          } else if (i % 5 === 0) {
+            node.appendChild(buzz);
+            b.appendChild(node);
+          } else if (i % 3 === 0) {
+            node.appendChild(fizz);
+            b.appendChild(node);
+          } else {
+            node.appendChild(num);
+            b.appendChild(node);
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

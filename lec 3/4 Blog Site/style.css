@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  padding-top: 5rem;
+  background-image: url(/images/bg.jpg);
+}
+
+.navbar {
+  background-image: url(/images/index.jpg);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+}
+nav > div {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+div > h1 {
+  float: left;
+  font-size: 30px;
+}
+nav ul {
+  list-style: none;
+}
+li {
+  display: inline-block;
+  margin-left: 3rem;
+  padding-top: 0.8rem;
+  font-size: 20px;
+}
+
+nav a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.logo {
+  color: black;
+  padding: 5px;
+  border-radius: 5px;
+}
+nav a:hover {
+  color: rgb(255, 251, 0);
+  transition: 1s;
+}
+section {
+  padding-left: 3rem;
+}
+.mainbody {
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  flex-wrap: wrap;
+  border: 1px solid black;
+  /* background-color: white; */
+}
+.movies,
+.programming,
+.anime,
+.technology,
+.sports {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  background: linear-gradient(rgb(130, 248, 248), rgb(59, 59, 187));
+  text-align: center;
+  margin: 1rem;
+  margin-left: 2rem;
+  border-radius: 0.5rem;
+}
+
+.shadow {
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
+    0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
+    0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
+    0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
+    0 20px 20px rgba(0, 0, 0, 0.15);
+}
+
+.text {
+  text-align: justify;
+  font-size: 15px;
+  padding: 1rem;
+}
+.header {
+  padding-top: 1rem;
+}
+nav img {
+  width: 1em;
+  height: 1em;
+}
+img {
+  width: 20rem;
+  margin: auto;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+.page-head {
+  margin-top: 2rem;
+  text-align: center;
+  color: white;
+}
+.page {
+  background-color: white;
+  margin-right: 50px;
+}
+
+.page img {
+  display: block;
+  width: auto;
+  height: 500px;
+  padding-top: 2em;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+.page p:first-of-type::first-letter {
+  font-size: 5rem;
+  float: left;
+  line-height: 50%;
+  margin: 0rem 1rem 1rem 1rem;
+}
+.page p {
+  text-align: justify;
+  padding: 5em;
+}
+.selected {
+  color: brown;
+}
+.read {
+  text-decoration: none;
+  padding-bottom: 1rem;
+  color: white;
+}
+
+.read:hover {
+  color: yellow;
+}
