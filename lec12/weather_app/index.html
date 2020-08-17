@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script defer src="app.js"></script>
     <script defer src="jquery.js"></script>
+
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Alata&display=swap"
@@ -21,12 +22,18 @@
       <input
         type="text"
         name="City"
+        class="city"
         id="inp"
         placeholder="Enter Your Place Name"
       />
       <button id="button">Go</button>
     </div>
 
-    <div class="output"></div>
+    <div class="output">
+      <p class="name"></p>
+      <p class="temp"></p>
+      <p class="desc"></p>
+      <p class="hi-low"></p>
+    </div>
   </body>
 </html>
