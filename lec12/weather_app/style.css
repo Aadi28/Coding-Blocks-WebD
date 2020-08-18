@@ -7,10 +7,11 @@ body {
   background-image: url(./images/ihfnlpbze7o01.jpg);
   background-position: 75% 15%;
   transition: 1s ease-in-out;
+  overflow: hidden;
 }
 .head {
   height: 8rem;
-  width: 100%;
+  width: 100em;
   background: linear-gradient(to left, rgb(0, 195, 255), rgb(0, 68, 255));
   text-align: center;
   text-shadow: 2px 5px rgba(255, 255, 255, 0.5);
@@ -110,3 +111,8 @@ body {
 .input input::placeholder {
   text-align: center;
 }
+/* 
+img {
+  width: 90px;
+  height: 90px;
+} */

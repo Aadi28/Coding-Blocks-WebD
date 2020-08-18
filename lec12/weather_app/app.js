@@ -19,7 +19,7 @@ button.addEventListener("click", () => {
             var hi_low = data["main"]["temp_min"] + "&degC/ " + data["main"]["temp_max"] + "&degC"
             var icon = data["weather"][0]["icon"];
             name_city.innerHTML = nameVal;
-            temperature.innerHTML = temp + "&degC" + `<img src="http://openweathermap.org/img/wn/10d@${icon}.png"></img>`;
+            temperature.innerHTML = temp + "&degC" + `<img src="http://openweathermap.org/img/wn/${icon}.png"></img>`;
             description.innerHTML = desc;
             high_low.innerHTML = hi_low;
         });
