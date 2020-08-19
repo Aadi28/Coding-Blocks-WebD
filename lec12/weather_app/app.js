@@ -8,7 +8,6 @@ const appid = 'd2238a3b3699ea69ff0d91d667725f5b'
 
 button.addEventListener("click", () => {
     const inp = document.querySelector(".city").value
-    document.querySelector("#inp").innerHTML = ""
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${inp}&appid=${appid}&units=metric`)
         .then(response => response.json())
         .then(data => {
@@ -22,6 +21,7 @@ button.addEventListener("click", () => {
             temperature.innerHTML = temp + "&degC" + `<img src="http://openweathermap.org/img/wn/${icon}.png"></img>`;
             description.innerHTML = desc;
             high_low.innerHTML = hi_low;
-        });
+        })
+    document.querySelector(".city").value = "";
 })
 
